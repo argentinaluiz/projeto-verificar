@@ -10,8 +10,8 @@ import { Task } from './services/task';
 export class AppComponent implements OnInit {
   title = 'frontend';
   
-  private task:Task = new Task();
-  private tasks: Task[] = new Array();
+   task:Task = new Task();
+   tasks: Task[] = new Array();
 
   constructor(private taskService:TaskService){};
 

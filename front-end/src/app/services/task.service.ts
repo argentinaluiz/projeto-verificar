@@ -25,12 +25,12 @@ export class TaskService {
    }
 
   findAll():Observable<Task[]> {
-    return this.http.get('http://localhost:8080/tasks')
+    return this.http.get('/tasks')
                     .map((res:Response) =>  res.json());
   }
    create(task: Task): Observable<Task>{
       return this.http
-                 .post('http://localhost:8080/tasks', JSON.stringify(task), this.options)
+                 .post('/tasks', JSON.stringify(task), this.options)
                  .map((res: Response) => res.json());
    }            
 }
