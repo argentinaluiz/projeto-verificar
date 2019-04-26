@@ -11,7 +11,6 @@ import {Client} from '../services/client';
 })
 export class ClientShowComponent implements OnInit {
     filter = "";
-    clients: Client[] = [];   //new Array()
 
     displayedColumns: string[] = ['id', 'name', 'date_birth', 'prof_empr', 'address', 'number', 'neighborhood', 'city', 'state', 'cpf_cnpj', 'obs'];
     dataSource = new MatTableDataSource();
@@ -26,7 +25,7 @@ export class ClientShowComponent implements OnInit {
     findAll(): void {
       this.clientService.findAll().subscribe(res => {
           console.log(res);
-          this.clients = res;
+          this.dataSource.data = res;
       })
   }
 
