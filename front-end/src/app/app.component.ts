@@ -8,29 +8,10 @@ import { Task } from './services/task';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  title = 'frontend';
+  title = 'Guesser';
   
-   task:Task = new Task();
-   tasks: Task[] = new Array();
-
-  constructor(private taskService:TaskService){};
-
-  ngOnInit(){
-    return this.findAll(); 
-  }
-
-  findAll():void{
-    this.taskService.findAll().subscribe(res => {
-      console.log(res);
-      this.tasks = res;
-    })
-  }
-
-     create():void {
-         this.taskService
-             .create(this.task)
-             .subscribe(response => {
-              return this.findAll(); 
-             })
-     }
+    constructor(){};
+ 
+  ngOnInit(){}
+  
 }

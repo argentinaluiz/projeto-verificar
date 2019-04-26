@@ -1,0 +1,76 @@
+<!---->
+<mat-form-field>
+  <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Filter">
+</mat-form-field>
+ 
+
+<table mat-table *ngFor="let client of clients" [dataSource]="clients"  class="mat-elevation-z8">
+  
+
+  <ng-container matColumnDef="id">
+    <th mat-header-cell *matHeaderCellDef> No. </th>
+    <td mat-cell *matCellDef="let clients"> {{client.id}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="name">
+    <th mat-header-cell *matHeaderCellDef> Nome </th>
+    <td mat-cell *matCellDef="let clients"> {{client.name}} </td>
+  </ng-container>
+
+  
+  <ng-container matColumnDef="date_birth">
+    <th mat-header-cell *matHeaderCellDef> Data.Nasc </th>
+    <td mat-cell *matCellDef="let clients"> {{client.date_birth}} </td>
+  </ng-container>
+
+  
+  <ng-container matColumnDef="prof_empr">
+    <th mat-header-cell *matHeaderCellDef>Prof/Empr</th>
+    <td mat-cell *matCellDef="let clients"> {{client.prof_empr}} </td>
+  </ng-container>
+
+  
+  <ng-container matColumnDef="address">
+    <th mat-header-cell *matHeaderCellDef>Endereço</th>
+    <td mat-cell *matCellDef="let clients"> {{client.address}} </td>
+  </ng-container>
+
+  
+  <ng-container matColumnDef="number">
+    <th mat-header-cell *matHeaderCellDef>Numero</th>
+    <td mat-cell *matCellDef="let clients"> {{client.number}} </td>
+  </ng-container>
+
+  
+  <ng-container matColumnDef="neighborhood">
+    <th mat-header-cell *matHeaderCellDef>Bairro</th>
+    <td mat-cell *matCellDef="let clients"> {{client.neighborhood}} </td>
+  </ng-container>
+
+   
+   <ng-container matColumnDef="city">
+    <th mat-header-cell *matHeaderCellDef>Cidade</th>
+    <td mat-cell *matCellDef="let clients"> {{client.city}} </td>
+  </ng-container>
+
+  
+   <ng-container matColumnDef="state">
+    <th mat-header-cell *matHeaderCellDef>Estado</th>
+    <td mat-cell *matCellDef="let clients"> {{client.state}} </td>
+  </ng-container>
+
+  
+  <ng-container matColumnDef="cpf_cnpj">
+    <th mat-header-cell *matHeaderCellDef>CPF/CNPJ</th>
+    <td mat-cell *matCellDef="let clients"> {{client.cpf_cnpj}} </td>
+  </ng-container>
+
+  
+  <ng-container matColumnDef="obs">
+    <th mat-header-cell *matHeaderCellDef>Observação</th>
+    <td mat-cell *matCellDef="let clients"> {{client.obs}} </td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>

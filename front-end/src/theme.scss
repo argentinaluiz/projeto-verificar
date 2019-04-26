@@ -1,0 +1,416 @@
+@import '~@angular/material/theming';
+@include mat-core();
+
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed:300,400,500');
+ 
+$my-app-primary: mat-palette($mat-green);
+$my-app-accent:  mat-palette($mat-grey);
+$my-app-warn:    mat-palette($mat-deep-orange);
+
+$my-app-theme: mat-light-theme($my-app-primary, $my-app-accent, $my-app-warn);
+
+@include angular-material-theme($my-app-theme);
+
+//----------------------------- Material Angular pattern ----------------------------//
+  
+.menu{
+  background-color: mat-color($my-app-primary);
+  color: lightgray;
+}
+
+footer{
+  text-shadow: 1px 1px 1px black;
+  color:mat-color($my-app-accent,100);
+  background-color: mat-color($my-app-accent,700);
+  margin-left: auto;
+  margin-right: auto;  
+}
+
+body{
+  background-color: mat-color($my-app-accent,100);
+}
+
+mat-card{
+   box-shadow: 1px 1px 1px black;  
+   background-color: mat-color($my-app-primary);
+   
+}
+
+mat-card-header{
+    
+}
+
+mat-card-title{
+  color: mat-color($my-app-warn,900);
+ 
+}
+
+.at1{
+  h3{
+    color:#3fc02a;
+  }  
+ /* background-color: mat-color($my-app-accent,300);*/
+
+ h3:hover{
+  color: mat-color($my-app-warn,900); 
+ }
+}
+
+
+.companytext{
+  color:mat-color($my-app-accent,700);
+}
+
+/* company page */
+.foot{
+  color: mat-color($my-app-primary); 
+}
+
+.adress{
+  color: mat-color($my-app-primary);
+}
+
+
+/* dialog-passw */
+
+.card-passw{
+  background-color: mat-color($my-app-accent,300);
+}
+
+.title-passw{
+  color: mat-color($my-app-primary);
+  text-shadow: 1px 1px 1px black;
+}
+
+.subt-passw{
+  
+}
+
+.btn-passw{
+  background-color: mat-color($my-app-primary);
+             color:lightgrey;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px black;
+}
+
+
+
+
+
+/*
+.icon-click:hover{
+  background-color: mat-color($my-app-warn,900);
+ }
+ 
+$mat-green: (
+  50: #e8f5e9,
+  100: #c8e6c9,
+  200: #a5d6a7,
+  300: #81c784,
+  400: #66bb6a,
+  500: #4caf50,
+  600: #43a047,
+  700: #388e3c,
+  800: #2e7d32,
+  900: #1b5e20,
+  A100: #b9f6ca,
+  A200: #69f0ae,
+  A400: #00e676,
+  A700: #00c853,
+  contrast: (
+    50: $dark-primary-text,
+    100: $dark-primary-text,
+    200: $dark-primary-text,
+    300: $dark-primary-text,
+    400: $dark-primary-text,
+    500: $dark-primary-text,
+    600: $light-primary-text,
+    700: $light-primary-text,
+    800: $light-primary-text,
+    900: $light-primary-text,
+    A100: $dark-primary-text,
+    A200: $dark-primary-text,
+    A400: $dark-primary-text,
+    A700: $dark-primary-text,
+  )
+);
+
+$mat-light-green: (
+  50: #f1f8e9,
+  100: #dcedc8,
+  200: #c5e1a5,
+  300: #aed581,
+  400: #9ccc65,
+  500: #8bc34a,
+  600: #7cb342,
+  700: #689f38,
+  800: #558b2f,
+  900: #33691e,
+  A100: #ccff90,
+  A200: #b2ff59,
+  A400: #76ff03,
+  A700: #64dd17,
+  contrast: (
+    50: $dark-primary-text,
+    100: $dark-primary-text,
+    200: $dark-primary-text,
+    300: $dark-primary-text,
+    400: $dark-primary-text,
+    500: $dark-primary-text,
+    600: $dark-primary-text,
+    700: $light-primary-text,
+    800: $light-primary-text,
+    900: $light-primary-text,
+    A100: $dark-primary-text,
+    A200: $dark-primary-text,
+    A400: $dark-primary-text,
+    A700: $dark-primary-text,
+  )
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+    .mat-card{
+    background-color: mat-color($my-app-primary,700); 
+    margin-top:20px;
+      
+        .mat-card-header{
+          background-color: mat-color($my-app-primary,100);
+       
+
+
+          .mat-card-title{
+            color: mat-color($my-app-primary,400);
+            text-shadow: 1px 1px 1px black;
+             
+                    
+          }
+          .mat-card-subtitle{
+               color: mat-color($my-app-primary,400);
+               text-shadow: 1px 1px 1px black;
+               
+          }
+
+        }
+        
+       
+       .mat-card-content{
+         background-color: mat-color($my-app-primary,200);
+         
+            p{           
+              text-shadow: 1px 1px 1px black;
+            }
+       }
+
+       .button{
+        background-color: mat-color($my-app-primary,100);
+        text-shadow: 1px 1px 1px black;
+       }
+
+   }  
+
+*/
+
+/*
+.card-init{
+  margin-top:70px;
+  color: mat-color($my-app-accent,900);
+  background-color: mat-color($my-app-accent,300); 
+  text-shadow: 1px 1px 1px black; 
+}
+
+.mat-card-header{
+  background-color: mat-color($my-app-accent,200);
+  border: 1px solid white;
+  box-shadow: 1px 1px 1px black;
+}  */
+
+
+/*
+
+.mat-toolbar{
+  background-color: mat-color($my-app-accent,darker);
+}
+
+//------------------------------ END  Material Angular pattern--------------------------//
+
+
+
+//---------------------------   PAGES ---------------------------------------//
+
+body{
+  background-color: mat-color($my-app-accent,100);  
+}
+
+
+
+
+
+.next{
+   background-color: mat-color($my-app-accent,200);
+   box-shadow:  1px 1px 1px mat-color($my-app-accent,900);
+}
+.next:hover{
+  color:white;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px mat-color($my-app-accent,900);
+}
+
+.containerX{
+  background-color: mat-color($my-app-primary,100); 
+}
+
+.d1{
+  background-color: mat-color($my-app-accent,200);
+   
+  mat-icon{
+   color: mat-color($my-app-accent,300);
+   text-shadow: 1px 1px 1px black; 
+  }
+
+     .resume{
+       color: mat-color($my-app-primary,500); 
+     } 
+
+  }
+
+.d2{   
+  color: mat-color($my-app-primary);
+  background-color: mat-color($my-app-primary,100); 
+  text-shadow: 1px 1px 1px black;
+
+  h1{
+    color: mat-color($my-app-primary);
+  } 
+
+  mat-hint{
+    color: mat-color($my-app-primary);
+    text-shadow: 1px 1px 1px black;
+  }
+
+  mat-icon{
+    color: mat-color($my-app-primary);
+    text-shadow: 1px 1px 1px black;
+  }
+
+}
+
+.d3{
+  background-color: mat-color($my-app-primary,900);
+}
+
+.course{
+  color: mat-color($my-app-primary,900); 
+  text-shadow: 1px 1px 1px black;
+}
+
+.contacts{
+  background-color:black;
+  text-shadow: 1px 1px 1px black;   
+}
+
+.hobbies{
+  background-color: mat-color($my-app-accent,900);
+}
+
+
+
+
+*/
+
+
+/*
+$app-typography: mat-typography-config(
+      $font-family: 'Muli, Roboto, "Helvetica Neue", sans-serif',
+      $display-4:     mat-typography-level(112px, 112px, 300),
+      $display-3:     mat-typography-level(56px, 56px, 400),
+      $display-2:     mat-typography-level(45px, 48px, 400),
+      $display-1:     mat-typography-level(34px, 40px, 400),
+      $headline:      mat-typography-level(24px, 32px, 400),
+      $title:         mat-typography-level(20px, 32px, 500),
+      $subheading-2:  mat-typography-level(16px, 28px, 400),
+      $subheading-1:  mat-typography-level(15px, 24px, 400),
+      $body-2:        mat-typography-level(14px, 24px, 500),
+      $body-1:        mat-typography-level(14px, 20px, 400),
+      $caption:       mat-typography-level(12px, 20px, 400),
+      $button:        mat-typography-level(14px, 14px, 500),
+        // Line-height must be unit-less fraction of the font-size.
+      $input:         mat-typography-level(16px, 1.25, 400)
+    );
+
+    @include mat-core($app-typography);
+
+    body, html {
+      margin: 0;
+      height: 100%;
+      font-size: mat-font-size($app-typography, body-1);
+      font-family: mat-font-family($app-typography);
+      line-height: mat-line-height($app-typography, body-1);
+    }
+
+
+// Override the typography in the core CSS.
+@include mat-core($custom-typography);
+
+$custom-typography: mat-typography-config(
+  $font-family: 'Chicle',
+  $headline: mat-typography-level(32px, 48px, 700),
+  $body-1: mat-typography-level(16px, 24px, 500)
+);
+
+// Override typography CSS classes (e.g., mat-h1, mat-display-1, mat-typography, etc.).
+@include mat-base-typography($custom-typography);
+
+// Override typography for a specific Angular Material components.
+@include mat-checkbox-typography($custom-typography);
+
+// Override typography for all Angular Material, including mat-base-typography and all components.
+@include angular-material-typography($custom-typography);
+*/
+
+/*
+  <mat-card>
+      Main Theme:
+      <button mat-raised-button color="primary">
+        Primary
+      </button>
+      <button mat-raised-button color="accent">
+        Accent
+      </button>
+      <button mat-raised-button color="warn">
+        Warning
+      </button>
+    </mat-card>
+    
+    <mat-card class="alternate-theme">
+      Alternate Theme:
+      <button mat-raised-button color="primary">
+        Primary
+      </button>
+      <button mat-raised-button color="accent">
+        Accent
+      </button>
+      <button mat-raised-button color="warn">
+        Warning
+      </button>
+    </mat-card>
+    */

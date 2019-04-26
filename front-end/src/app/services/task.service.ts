@@ -14,7 +14,7 @@ import { Task } from './task';
 
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root' 
 })
 export class TaskService {
     private headers: Headers;
@@ -24,6 +24,7 @@ export class TaskService {
     this.options = new RequestOptions({ headers: this.headers});
    }
 
+   // http://localhost:8080
   findAll():Observable<Task[]> {
     return this.http.get('/tasks')
                     .map((res:Response) =>  res.json());

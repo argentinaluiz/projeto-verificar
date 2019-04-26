@@ -1,0 +1,181 @@
+<body>
+  <div class="adress">
+      <p>vivo - (47) 99614-4338 / Tim - 9997-3206
+      / Av.Brasil, 131 - 88330-000 / Balneário Camboriú - SC / iguesser79@gmail.com</p>
+  </div>
+  <div class="container" fxLayout="row" fxLayout.xs="column" fxLayoutWrap fxLayoutGap="0.5%" fxLayoutAlign="center" > 
+    <div fxFlex="33%"> 
+         <div class="at01">
+           <img class="logo" [src]="logo" alt="logo">
+           </div>
+    </div>
+    <div fxFlex="33%">
+        <div class="at02">
+           <img class="slogan" [src]="slogan" alt="slogan">
+        </div>
+    </div> 
+    <!-- -->
+        <div fxFlex="33%">
+            <div class="at03">
+                <div class="at1" (click)="whatsapp()">
+                    <mat-card-title>
+                        <h3><img class="icon-whats" [src]="whats">agenda whatsapp</h3>
+                        <img class="icon-click" [src]="click"  >
+                    </mat-card-title>
+                </div>
+            </div> 
+        </div>  
+  </div>
+  
+  
+  <div class="container2" fxLayout="row" fxLayout.xs="column" fxLayoutWrap fxLayoutGap="0.5%" fxLayoutAlign="center" > 
+          <div fxFlex="100%"> 
+            <mat-card>
+              <mat-card-header>
+                 <mat-card-title>
+                    <h3><img class="info-icon" [src]="eletricicon">Instalações Elétricas</h3>
+                 </mat-card-title>
+              </mat-card-header>
+              <img mat-card-image [src]="eletric" alt="Foto instalações elétricas">
+              <mat-card-content>
+                <p>
+                    Instalação em tensão reduzida ou extrabaixa tensão.
+                    Instalação em baixa tensão (BT).
+                    Instalação em alta tensão (AT).
+                    Em corrente contínua.
+                    Em corrente alternada monofásica (uma fase e neutro)
+                    Em corrente alternada trifásica (três fases e neutro).
+                </p>
+              </mat-card-content>
+            </mat-card>
+          </div>
+  
+  
+          <div fxFlex="100%"> 
+            <mat-card>
+              <mat-card-header>
+                  <mat-card-title>
+                      <h3><img class="info-icon" [src]="hidraulicicon">Instalações Hidraulicas</h3>
+                   </mat-card-title>
+              </mat-card-header>
+              <img mat-card-image [src]="hidraulic" alt="Foto instalações hidraulicas">
+              <mat-card-content>
+                <p>
+                  Para executar bons serviços de sistema hidráulico da sua casa é necessário contratar um bom encanador, tubulações de água fria são responsáveis por distribuir a água potável vinda rede pública ou caixa d’água para as pias, vasos sanitários, chuveiros, tanque da lavanderia,  torneiras de jardim, etc.
+                </p>
+              </mat-card-content>
+            </mat-card>
+          </div>
+  </div>
+  
+  
+  <div class="container3" fxLayout="row" fxLayout.xs="column" fxLayoutWrap fxLayoutGap="0.5%" fxLayoutAlign="center" > 
+    <div fxFlex="100%" >
+      <mat-card>
+        <mat-card-header>
+            <mat-card-title>
+                <h3><img class="info-icon" [src]="metalsicon">Instalações Metais/Louças</h3>
+             </mat-card-title>
+        </mat-card-header>
+        <img mat-card-image [src]="metals" alt="Foto instalações metais e louças">
+        <mat-card-content>
+          <p>
+            Quem nunca viveu um pesadelo na hora da instalação de louças, metais e acessórios de banheiro? Se você é arquiteto ou designer de interiores, provavelmente já passou alguma vez por essa situação, então deixe com a gente, temos experiência para essa função. Procure sempre de uma mesma linha e fabricante (misturadores, torneiras, válvulas de descarga, reguladores, entre outros), garantindo assim uma mesma linguagem de desenho e acabamento para todas as peças.
+          </p>
+        </mat-card-content>
+      </mat-card>
+    </div>
+    <div fxFlex="100%">
+      <mat-card>
+        <mat-card-header>
+            <mat-card-title>
+                <h3><img class="info-icon" [src]="mainticon"> Manutenção Predial/Comercial</h3>
+             </mat-card-title>
+        </mat-card-header>
+        <img mat-card-image [src]="maintenances" alt="Foto manutenção predial e comercial">
+        <mat-card-content>
+          <p>
+            Cuidados com sistemas elétrico, hidráulico, tarefa que exige por gente que tem experiências e planejamento. Um processo de manutenção predial adequado pode não só corrigir erros, como conservá-lo do ponto de vista patrimonial. Um plano de manutenção é sinônimo de economia e investimento e é fundamental conscientizar os administradores de prédios, inclusive públicos e  dono de sua residência de que é uma questão acima de tudo de segurança e saúde
+          </p>
+        </mat-card-content>
+      </mat-card> 
+    </div>
+  </div>
+  
+  <div class="container4" fxLayout="row" fxLayout.xs="column" fxLayoutWrap fxLayoutGap="0.5%" fxLayoutAlign="center"> 
+      <div fxFlex="100%">
+        <mat-card>
+          <mat-card-header>
+              <mat-card-title>
+                  <h3><img class="info-icon" [src]="leaksicon">Conserto de Vazamentos</h3>
+               </mat-card-title>
+          </mat-card-header>
+          <img mat-card-image [src]="leaks" alt="Foto conserto de vazamentos">
+          <mat-card-content>
+            <p>
+              Algum sistema da sua casa ou prédio está com vazamento de água? Você está precisando de um serviço rápido e que faça um trabalho de qualidade? Nós da instaladora guesser, localizamos e reparamos os vazamentos ou canos de água quebrados em residências e propriedades comerciais.
+            </p>
+          </mat-card-content>
+        </mat-card>
+      </div>
+      <div fxFlex="100">
+        <mat-card>
+          <mat-card-header>
+              <mat-card-title>
+                  <h3><img class="info-icon" [src]="unstopicon">Desintupimentos</h3>
+               </mat-card-title>
+          </mat-card-header>
+          <img mat-card-image [src]="unstop" alt="Foto de desintupimentos">
+          <mat-card-content>
+            <p>
+              Problemas de entupimentos podem surgir de repente e sem dar aviso nenhum, nos pegando completamente de surpresa. Felizmente esse é um problema que também resolvemos, dependendo da obstrução utilizamos de diferentes técnicas. Nos contrate e fique tranquilo.
+            </p>
+          </mat-card-content>
+        </mat-card>
+      </div>
+  </div>
+  
+    <br><br><br>
+  
+  </body>
+      
+  
+      
+  
+      
+   
+      
+  
+  
+  
+  
+  
+  
+  
+  
+  <!--
+  
+  // <mat-icon @boxMovie3 class="symbol">all_inclusive</mat-icon> 
+  //<h1><img class="info-icon" [src]="info">GENERAL INFO</h1>
+  
+  <div class="container2" class="container" fxLayout="row" fxLayout.xs="column" fxLayoutWrap fxLayoutGap="0.5%" fxLayoutAlign="center" >
+  
+    <div fxFlex="50%">
+      <mat-card>
+           <mat-card-title>Instalações elétricas</mat-card-title>
+          <img mat-card-image [src]="eletric" alt="eletric">
+      </mat-card>
+      
+    </div>
+  <div fxFlex="100%">
+     <mat-card-content>
+       <p>
+            lafksdfha alsdkjf aslaksjdfh a alskdjfh alasdkjfh a laskdjfha sdflaksdjf asdljds al
+       </p>
+     </mat-card-content>
+  </div>
+  
+  
+  
+  </div>
+  -->

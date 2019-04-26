@@ -1,0 +1,159 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+}
+
+
+/* SCROLLBAR */
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #27ae60; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #219251; 
+}
+
+
+
+
+
+
+.container{
+    margin-top: 2%;
+}
+
+.logo{
+    width:50%; /*100%*/
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  
+}
+
+.slogan{
+    width:95%; /*70%*/
+    height: auto;
+    margin-top:5%;   
+    margin-left: auto;
+    margin-right: auto;
+  
+}
+
+mat-card{
+    width: 95%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1%;    
+
+   
+}
+
+mat-card-title{
+    text-shadow: 1px 1px 1px black;
+}
+
+.info-icon{
+    width: 30px;
+    height: auto;
+    padding-right: 5px;
+   }
+
+ .at{
+     width: 100%;
+     height: auto;    
+     text-align: center;
+     margin-left: auto;
+     margin-right: auto;       
+ }
+
+ .at01{
+    width: 100%;
+    height: auto;    
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;  
+ }
+
+ .at02{
+    width: 100%;
+    height: auto;    
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;  
+ }
+
+ .at03{
+    width: 100%;
+    height: auto;    
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;  
+ }
+
+ .at1{
+    width: 50%;
+    height: auto; 
+    margin-top: 5%;  
+    text-align: center; 
+    margin-left: auto;
+    margin-right: auto;    
+}
+
+/*
+.at1:hover{
+    background-color: darkgray;
+    border-radius: 5px;
+    padding:1px;
+}
+*/
+
+.icon-whats{
+    width: 40px;
+    height: auto;   
+   }
+
+   .icon-click{
+    width: 30px;
+    height: auto;  
+   }
+
+.adress{
+    width: 100%;
+    height: auto;    
+    text-align: center; 
+    margin-left: auto;
+    margin-right: auto;
+    text-shadow: 1px 1px 1px black;
+}
+
+   /*  
+      background-color: darkgray;
+   background-color: rosybrown;  
+   
+   float: right;   margin-left: 100%;
+   
+    @media only screen and (max-width: 768px) {
+       
+        [class*=".at"] {
+            width: 100%;
+          }
+
+   */

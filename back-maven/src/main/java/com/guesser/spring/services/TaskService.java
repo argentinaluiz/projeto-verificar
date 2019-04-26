@@ -33,7 +33,6 @@ public class TaskService implements ITaskService {
     }
 
 
-
     @Override
     public Optional<Task> findOne(Long id) {
         return this.taskRepository.findById(id);

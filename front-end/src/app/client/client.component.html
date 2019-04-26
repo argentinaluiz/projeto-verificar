@@ -1,0 +1,55 @@
+
+<mat-card class="card-passw">
+  <mat-card-header>      
+    <mat-card-title class="title-passw">Cadastro de Clientes</mat-card-title>
+    <mat-card-subtitle class="subt-passw">dados e informações</mat-card-subtitle>
+  </mat-card-header> 
+
+
+  <mat-card-content>
+    <div class="example-container"> 
+    
+        <form (ngSubmit)="create()"> 
+             
+              <mat-form-field>
+                <input matInput name="name" [(ngModel)]="client.name" placeholder="Nome :"> 
+              </mat-form-field> 
+              <mat-form-field class="select">                 
+              <input matInput name="date_birth" [(ngModel)]="client.date_birth" type="text" placeholder="Data Nasc :" value="{{today | date:'dd/MM/yyyy'}}" > 
+              </mat-form-field>
+              <mat-form-field>
+                  <input matInput name="prof_empr" [(ngModel)]="client.prof_empr" placeholder="Prof/Empresa :"> 
+              </mat-form-field>
+              <mat-form-field>
+                  <input matInput name="address" [(ngModel)]="client.address" placeholder="Endereço :"> 
+              </mat-form-field>
+              <mat-form-field>
+                <input matInput name="number" [(ngModel)]="client.number" placeholder="Número :"> 
+              </mat-form-field>
+             <mat-form-field>
+              <input matInput name="neighborhood" [(ngModel)]="client.neighborhood" placeholder="Bairro :"> 
+          </mat-form-field>
+          <mat-form-field>
+            <input matInput name="city" [(ngModel)]="client.city" placeholder="Cidade :"> 
+          </mat-form-field>
+          <mat-form-field>
+            <input matInput name="state" [(ngModel)]="client.state" placeholder="Estado :"> 
+          </mat-form-field>          
+              <mat-form-field>
+                  <input matInput name="cpf_cnpj" [(ngModel)]="client.cpf_cnpj" placeholder="CPF / CNPJ :">  
+               </mat-form-field>
+               <mat-form-field>
+                <textarea matInput name="obs"  [(ngModel)]="client.obs" placeholder="Observações : "></textarea>
+              </mat-form-field>
+              <mat-card-actions>
+                <button mat-button type="submit" class="btn-passw">Salvar</button>     
+              </mat-card-actions>
+           </form>   
+    </div>
+  </mat-card-content>
+  
+  <!--{{ date | date:'full' }}-->
+  <br> <br> <br>
+ 
+</mat-card>
+

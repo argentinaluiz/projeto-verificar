@@ -1,0 +1,83 @@
+/* Structure  table*/
+table {
+   width: 100%;
+ }
+ 
+ .mat-form-field {
+   font-size: 14px;
+   width: 100%;
+ }
+
+ /* Structure  table end*/
+
+
+
+
+
+
+
+
+
+mat-card{
+   
+    height: auto;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+mat-card-header{
+   width: 100%;
+   height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+ /*background-color:red;*/
+}
+
+mat-card-title{
+    width: 100%;
+    height: auto;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   text-align: center;
+  /*background-color:red;*/
+}
+
+
+ mat-card-actions{
+   width: 100%;
+   height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  /*background-color:red;*/
+ }
+
+ mat-form-field{
+    width: 100%;
+    height: auto;
+ }
+
+ .select{
+    width: 30%;
+    height: auto;
+ }
+
+ input{
+    width: 100%;
+    height: auto;
+}
+
+
+.example-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .example-container > * {
+    width: 100%;
+  }

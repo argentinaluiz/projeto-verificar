@@ -1,0 +1,27 @@
+<!-- @menuMovie -->
+<div class="menu"> 
+  <span class="fill-remaining-space">
+  <button mat-icon-button [matMenuTriggerFor]="menu">
+      <mat-icon>menu</mat-icon> 
+    </button>  
+    <mat-menu #menu="matMenu" [overlapTrigger]="false">
+      <button mat-menu-item routerLink="home">
+        <mat-icon>home</mat-icon>
+        <span  >Home</span> 
+      </button>        
+      <button mat-menu-item routerLink="company">
+        <mat-icon>event_note</mat-icon>
+        <span >Quem somos</span>
+      </button>
+      <button mat-menu-item  routerLink="login">
+        <mat-icon>exit_to_app</mat-icon>
+        <span>Central</span>
+      </button>      
+           
+    </mat-menu>
+  </span>
+  <button mat-icon-button [matMenuTriggerFor]="menu">
+    <span class="fill-remaining-space">menu</span>    
+  </button>   
+</div>
+    <!--(click)="central()"-->

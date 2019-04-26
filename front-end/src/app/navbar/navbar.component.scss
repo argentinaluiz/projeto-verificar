@@ -1,0 +1,28 @@
+.topbar {
+    position: absolute;
+    margin: 0px;
+    padding:0px;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    z-index: 2; 
+    color: white;    
+}
+
+.fill-remaining-space{
+  text-shadow: 1px 1px 1px black; 
+  font-size: 20px;
+}
+
+
+span{
+  text-shadow: 1px 1px 1px black;
+}
+
+mat-icon{
+  text-shadow: 1px 1px 1px black;
+}
+
+.menu{
+  border-bottom: 1px solid black;
+}
