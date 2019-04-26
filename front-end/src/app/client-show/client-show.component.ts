@@ -1,40 +1,38 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {MatTableDataSource} from '@angular/material';
-import { ClientService } from '../services/client.service';
-import { Client } from '../services/client';
+import {ClientService} from '../services/client.service';
+import {Client} from '../services/client';
 
 
 @Component({
-  selector: 'app-client-show',
-  templateUrl: './client-show.component.html',
-  styleUrls: ['./client-show.component.scss']
+    selector: 'app-client-show',
+    templateUrl: './client-show.component.html',
+    styleUrls: ['./client-show.component.scss']
 })
 export class ClientShowComponent implements OnInit {
-            filter = "";        
-            clients: Client[] = [];   //new Array()
-          
- constructor(private clientService:ClientService){};
+    filter = "";
+    clients: Client[] = [];   //new Array()
 
+    displayedColumns: string[] = ['id', 'name', 'date_birth', 'prof_empr', 'address', 'number', 'neighborhood', 'city', 'state', 'cpf_cnpj', 'obs'];
+    dataSource = new MatTableDataSource();
 
- findAll():void{
-   this.clientService.findAll().subscribe(res => {
-     console.log(res);
-     this.clients = res;
-   })
- } 
+    constructor(private clientService: ClientService) {
+    };
 
+    ngOnInit() {
+        return this.findAll();
+    }
 
- ngOnInit(){
- return this.findAll();
-}
-
-    displayedColumns: string[] = ['id', 'name', 'date_birth', 'prof_empr', 'address', 'number' , 'neighborhood', 'city', 'state', 'cpf_cnpj', 'obs'  ];
-  dataSource = new MatTableDataSource(this.clients);
-
-  applyFilter(filterValue: string) {
-    this.dataSource.filter = filterValue.trim().toLowerCase();
+    findAll(): void {
+      this.clientService.findAll().subscribe(res => {
+          console.log(res);
+          this.clients = res;
+      })
   }
 
-   
+    applyFilter(filterValue: string) {
+        this.dataSource.filter = filterValue.trim().toLowerCase();
+    }
+
 
 }
